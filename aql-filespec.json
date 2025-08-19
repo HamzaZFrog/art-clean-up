@@ -3,7 +3,8 @@
     {
       "aql": {
         "items.find": {
-          "created": { "$before": "${timeframe}" }
+          "repo": "${repo}",
+          "modified": { "$before": "${timeframe}" }
         }
       }
     }
